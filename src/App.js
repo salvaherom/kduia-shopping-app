@@ -10,7 +10,21 @@ function App() {
   return ( 
     <AppProvider>
         <div className="container">
-            <CartValue />
+            <h1 className="mt-3">Shoping App</h1>
+            <div className="row mt-3">
+                <div className="col-sm">
+                    <CartValue />
+                </div>
+                <div className="col-sm">
+                    <Location />
+                </div>
+            </div>
+            <h3 className="mt-3">Shoping Cart</h3>
+            <div className="row">
+                <div className="col-sm">
+                    <ExpenseList />
+                </div>
+            </div>
         </div>
     </AppProvider>
   );
