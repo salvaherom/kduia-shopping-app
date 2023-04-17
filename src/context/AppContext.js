@@ -90,6 +90,8 @@ export const AppProvider = (props) => {
                 dispatch,
                 Location: state.Location                
             }}
-        ></AppContext.Provider>
+        >
+            {props.children}
+        </AppContext.Provider>
     );
 };
